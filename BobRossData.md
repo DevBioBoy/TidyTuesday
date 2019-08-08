@@ -1,32 +1,28 @@
 ---
 title: "BobRossData"
 author: "Gabriel Hauswirth" 
-date: "`r format(Sys.Date())`"
+date: "2019-08-08"
 output: 
   html_document: 
     keep_md: yes
 ---
 
-```{r global_options, include=FALSE}
-knitr::opts_chunk$set(warning=FALSE, message=FALSE)
-```
+
 
 ### Load required packages
 
-```{r}
+
+```r
 library(tidyverse)
 library(scales)
 ```
 
 
-```{r}
+
+```r
 #import data
 
 bob_ross <- readr::read_csv("https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2019/2019-08-06/bob-ross.csv")
-
-
-
-
 ```
 
 Add a new chunk by clicking the *Insert Chunk* button on the toolbar or by pressing *Cmd+Option+I*.
